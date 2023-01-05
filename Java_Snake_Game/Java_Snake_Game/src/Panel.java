@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.util.Arrays;
+import java.util.Arrays;// for fill the Array of snake
 import java.util.Random;
 
 //inheriting Panel class from JPanel class and adding actionListener  
@@ -168,7 +168,7 @@ public class Panel extends JPanel implements ActionListener{
         if ((fx == xsnake[0]) && (fy ==ysnake[0])){
             body++;
             score++;
-            spawnfood();
+            spawnfood();//for new food
         }
     }
 
@@ -176,9 +176,9 @@ public class Panel extends JPanel implements ActionListener{
     @Override
         public void keyPressed(KeyEvent e){
         switch (e.getKeyCode()){
-
-            case KeyEvent.VK_LEFT:
-                if (dir!='R'){
+                        //for change the directon
+            case KeyEvent.VK_LEFT:  
+                if (dir!='R'){//<------>>
                     dir = 'L';
                 }
                 break;
@@ -198,7 +198,8 @@ public class Panel extends JPanel implements ActionListener{
                 }
                 break;
             case KeyEvent.VK_R:
-                if (!flags){
+                if (!flags){// check the game not running
+                    // Changing everything to the intial values and starting the game 
                     score = 0;
                     body = 3;
                     dir = 'R';
@@ -218,7 +219,7 @@ public class Panel extends JPanel implements ActionListener{
                 checkScore();
                 checkHit();
             }
-            repaint();
+            repaint();// not running game then 
         }
 
     }
