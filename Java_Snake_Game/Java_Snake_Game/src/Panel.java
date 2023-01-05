@@ -4,7 +4,7 @@ import java.awt.event.*;
 import java.util.Arrays;
 import java.util.Random;
 
-//inheriting Panel class from JPanel class and adding actionListener
+//inheriting Panel class from JPanel class and adding actionListener  
 public class Panel extends JPanel implements ActionListener{
     //dimensions of the panel
     static int width=1200;
@@ -14,7 +14,7 @@ public class Panel extends JPanel implements ActionListener{
 
     //for checking the state of the game at regular intervals
     Timer timer;
-    static int delay = 160;
+    static int delay = 160;//in mili sec
 
     //for food spawns
     Random random;
