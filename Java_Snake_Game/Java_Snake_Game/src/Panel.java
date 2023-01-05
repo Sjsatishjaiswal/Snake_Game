@@ -1,8 +1,8 @@
 import javax.swing.*;
-import java.awt.*;
+import java.awt.*;// for KeyListener 
 import java.awt.event.*;
 import java.util.Arrays;// for fill the Array of snake
-import java.util.Random;
+import java.util.Random;// for random food
 
 //inheriting Panel class from JPanel class and adding actionListener  
 public class Panel extends JPanel implements ActionListener{
@@ -10,7 +10,7 @@ public class Panel extends JPanel implements ActionListener{
     static int width=1200;
     static int height=600;
     //size of each unit
-    static int unit=50;
+    static int unit=50;// width total  unnit 1200/50=24, height total unit  600/50=12 
 
     //for checking the state of the game at regular intervals
     Timer timer;
