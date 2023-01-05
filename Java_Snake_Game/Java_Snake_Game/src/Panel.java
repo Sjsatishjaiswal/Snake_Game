@@ -171,7 +171,7 @@ public class Panel extends JPanel implements ActionListener{
             spawnfood();//for new food
         }
     }
-
+             // For R key 
     public class Key extends KeyAdapter{
     @Override
         public void keyPressed(KeyEvent e){
