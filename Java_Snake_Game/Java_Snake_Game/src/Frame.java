@@ -7,8 +7,8 @@ public class Frame extends JFrame{
         this.setTitle("snake");
 
         //ensuring same experiance across different devices
-        this.setResizable(false);
-        this.pack();
+        this.setResizable(false);//set the frame fix size for same game experiances
+        this.pack();//different screen or resolution
 
         this.setVisible(true);
 
